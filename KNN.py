@@ -1,13 +1,21 @@
 #we have to predict class
 '''
 1.IMPORT DATASET
+
 1.B PREPROCESSING
+
 2.SPLIT 
+
 3.TRAINING +TEST
+
 4.X_TRAIN,Y_TRAIN
+
 5.MODEL
+
 6.ACCESS -CONFUSION MATRIX
+
 7.PLOT GRAPH
+
 p=1 manhattan
 p=2 minkowski
 
@@ -28,8 +36,8 @@ from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25,random_state=0)
 
 # FEATURE SCALING
-from sklearn.preprocessing import StandardScaler
-sc=StandardScaler()
+#from sklearn.preprocessing import StandardScaler
+#sc=StandardScaler()
 X_train=sc.fit_transform(X_train)
 X_test=sc.transform(X_test)
 
@@ -83,3 +91,4 @@ plt.xlabel('AGE')
 plt.ylabel('ESTIMATED SALARY')
 plt.legend()
 plt.show()
+#WORKING CODE
